@@ -22,8 +22,6 @@ interface UseFormState {
   error: AxiosError | null;
 }
 
-const navigateToUsers = () => {};
-
 const useForm = ({ initialState, submitUrl }: UseFormProps) => {
   const history = useNavigate();
   const [state, setState] = useState<UseFormState>({
